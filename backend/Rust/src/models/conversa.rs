@@ -1,5 +1,6 @@
 use serde::{Serialize,Deserialize};
 
+
 #[derive(Deserialize,Serialize)]
 pub struct Conversa {
     pub id : String,
