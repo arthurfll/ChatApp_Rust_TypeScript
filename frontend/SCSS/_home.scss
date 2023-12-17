@@ -1,0 +1,68 @@
+@import "_colors";
+
+body {
+    background-color : $background;
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+};
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+ul {
+    list-style: none;
+  }
+
+#sidebar {
+    background-color: $background;
+    width: 400px; /* 50% da largura do contêiner pai */
+    height: 100%; /* 200 pixels de altura */
+}
+
+#cabeçalho-sidebar{
+    display: flex;
+    border: 2px solid white;
+}
+
+#conversas {
+    background-color: $background-mensagens;
+}
+
+#conversa-atual {
+    background-color: $background-mensagens;
+    right: 0;
+    position: fixed;
+    padding: 10px;
+    left: 32%;
+}
+
+.conversas-sidebar {
+    background-color: $background-mensagens;
+    border: 0.1px solid #25323b;
+    width: 380px; /* 50% da largura do contêiner pai */
+    height: 100px; /* 200 pixels de altura */
+}
+
+#enviar {
+    border: 1px solid white;
+    border-radius: 7px;
+    display: flex;
+    bottom: 10px;
+    padding: 10px;
+    right: 32%;
+    text-align: center;
+}
+
+#input {
+    border: 2px solid white;
+}
+#botao-enviar {
+    border: 2px solid white;
+}

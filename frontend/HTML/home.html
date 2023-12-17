@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: #0c1114;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="../SCSS/styles.css">
 </head>
 <body>
     <div id="sidebar">
-        <div id="cabeçalho">
-            <p>nome</p>
+        <div id="cabeçalho-sidebar">
+            <p>Arthur</p>
             <p>logout</p>
         </div>
 
-        <ul>
-            <li>conversa</li>
-            <li>conversa</li>
-            <li>conversa</li>
-            <li>conversa</li>
-            <li>conversa</li>
-            <li>conversa</li>
+        <ul id="conversas">
+            <a href=""><li class="conversas-sidebar">Thalita</li></a>
+            <a href=""><li class="conversas-sidebar">Basílio</li></a>
+            <a href=""><li class="conversas-sidebar">Vitor Mateus</li></a>
+            <a href=""><li class="conversas-sidebar">Simão</li></a>
+            <a href=""><li class="conversas-sidebar">José</li></a>
+            <a href=""><li class="conversas-sidebar">Ternura</li></a>
         </ul>
     </div>
 
-    <div id="conversa">
-        <div id="cabeçalhoConversa">
+    <div id="conversa-atual">
+        <div id="cabeçalho-conversa">
             nome
             pesquisar
         </div>
 
         <div id="corpo">
-            <div id="mensagens_remetente">
+            <div id="mensagens-remetente">
                 <ul>
                     <li>
                         mensagem
@@ -44,7 +39,7 @@
                 </ul>
                 
             </div>
-            <div id="mensagens_destinatario">
+            <div id="mensagens-destinatario">
                 <ul>
                     <li>
                         mensagem
@@ -56,8 +51,8 @@
         </div>
 
         <div id="enviar">
-            <input type="text">
-            <button>-></button>
+            <input type="text" id="input">
+            <button id = "botao-enviar">-></button>
         </div>
     </div>
 
